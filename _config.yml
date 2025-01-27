@@ -23,7 +23,7 @@ author:
   # Biographic information
   avatar           : "profile.png"
   name             : "Xuezhou Xu"
-  pronouns         : "he/him"  
+  pronouns         : # "he/him"  
   bio              : "Undergraduate@NUS"
   location         : "Singapore,Singapore"
   employer         : "National University of Singapore"
@@ -73,7 +73,6 @@ author:
   xing             : # Username
   youtube          : # Username
   zhihu            : # Username
-  Wechat           : "Allen_xxz"
 
 # Publication Category - The following the list of publication categories and their headings
 publication_category:
