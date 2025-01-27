@@ -9,8 +9,6 @@ redirect_from:
 
 {% include base_path %}
 
-# CV
-
 ## Education
 * **B.S. (Honours) in Mathematics**, National University of Singapore, 2025 (expected)  
   * Major: Mathematics (Specialization in Operations Research & Analytics)  
@@ -65,3 +63,7 @@ redirect_from:
 * Programming: Python, Java, R  
 * Deep Learning and Robotics: PyTorch, Isaac Lab (Orbit, Omnigibson)  
 * Languages: Mandarin (Native), English (Proficiency)  
+
+## Contact
+* Email: xu.xuezhou@u.nus.edu
+* Wechat: Allen_xxz
