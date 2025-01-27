@@ -56,7 +56,7 @@ author:
   goodreads        : # Username
   google_plus      : # Username
   keybase          : # Username
-  instagram        : @allenxuxz
+  instagram        : "@allenxuxz"
   lastfm           : # Username
   linkedin         : # Username
   mastodon         : # URL
@@ -73,7 +73,7 @@ author:
   xing             : # Username
   youtube          : # Username
   zhihu            : # Username
-  Wechat           : Allen_xxz
+  Wechat           : "Allen_xxz"
 
 # Publication Category - The following the list of publication categories and their headings
 publication_category:
