@@ -12,3 +12,8 @@ I'm a final year undergraduate student from [Department of Mathematics](https://
 I am very fortunate to be advised by [Prof. Hang Su](https://www.suhangss.me/) and [Prof. Jun Zhu](https://ml.cs.tsinghua.edu.cn/~jun/index.shtml) of TSAIL Group from [Department of Computer Science and Technology](https://www.cs.tsinghua.edu.cn/csen/), Tsinghua University. I was advised by [Prof. Nikolay A. Atanasov](https://natanaso.github.io/) from [Department of Electrical and Computer Engineering](https://www.ece.ucsd.edu/), University of California, San Diego and [Prof. Pan Xu](https://panxulab.github.io/) from [Duke University](https://duke.edu/).
 
 I’m actively seeking opportunities to pursue a PhD degree starting from Fall 2025! I'm open for discussion and potential collaborations. Feel free to reach out!
+
+## Contact
+You can reach me via email or WeChat.
+
+![WeChat](images/wechat.jpg)
