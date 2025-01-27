@@ -23,8 +23,8 @@ author:
   # Biographic information
   avatar           : "profile.png"
   name             : "Xuezhou Xu"
-  pronouns         : # example: "she/her"  
-  bio              : "Hello World!"
+  pronouns         : "he/him"  
+  bio              : "Undergraduate@NUS"
   location         : "Singapore,Singapore"
   employer         : "National University of Singapore"
   uri              : # URL
@@ -56,7 +56,7 @@ author:
   goodreads        : # Username
   google_plus      : # Username
   keybase          : # Username
-  instagram        : # Username
+  instagram        : @allenxuxz
   lastfm           : # Username
   linkedin         : # Username
   mastodon         : # URL
@@ -73,6 +73,7 @@ author:
   xing             : # Username
   youtube          : # Username
   zhihu            : # Username
+  Wechat           : Allen_xxz
 
 # Publication Category - The following the list of publication categories and their headings
 publication_category:
