@@ -8,10 +8,6 @@ profile:
   align: right
   image: xxz_prof_pic.jpg
   image_circular: false # crops the image to make it circular
-  more_info: >
-    <p>555 your office number</p>
-    <p>123 your address street</p>
-    <p>Your City, State 12345</p>
 
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
@@ -27,11 +23,11 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-I currently work as a visiting scholar at [ECE](https://cde.nus.edu.sg/ece/), [National University of Singapore](https://nus.edu.sg/) under the supervision of [Prof. Xingyu Li](https://xingyul.github.io/).
+I’m a visiting scholar in the [Department of Electrical and Computer Engineering](https://cde.nus.edu.sg/ece/) at the [National University of Singapore](https://nus.edu.sg/), advised by [Prof. Xingyu Liu](https://xingyul.github.io/).
 
-I completed my undergraduate studies with highest distinction at the National University of Singapore, majoring in Mathematics with a minor in Computer Science.
+I completed my B.Sc. in Mathematics (Highest Distinction) with a minor in Computer Science at NUS.
 
-Prior to that, I had the honor to work in the [Tsinghua SAIL Group](https://ml.cs.tsinghua.edu.cn/), supervised by [Prof. Jun Zhu](https://ml.cs.tsinghua.edu.cn/~jun/index.shtml) and [Prof. Hang Su](http://www.suhangss.me/).
+Previously, I worked in [Tsinghua SAIL Group](https://ml.cs.tsinghua.edu.cn/) with [Prof. Jun Zhu](https://ml.cs.tsinghua.edu.cn/~jun/index.shtml) and [Prof. Hang Su](http://www.suhangss.me/).
 
 ## Research Interests
 

@@ -39,7 +39,7 @@ scholar_userid: ivTfnKgAAAAJ # your Google Scholar ID
 # strava_userid: # your strava user id
 # telegram_username: # your Telegram user name
 # unsplash_id: # your unsplash id
-# wechat_qr: # filename of your wechat qr-code saved as an image (e.g., wechat-qr.png if saved to assets/img/wechat-qr.png)
+wechat_qr: assets/img/wechat-qr.png # filename of your wechat qr-code saved as an image (e.g., wechat-qr.png if saved to assets/img/wechat-qr.png)
 # whatsapp_number: # your WhatsApp number (full phone number in international format. Omit any zeroes, brackets, or dashes when adding the phone number in international format.)
 # wikidata_id: # your wikidata id
 # wikipedia_id: # your wikipedia id (Case sensitive)
@@ -47,7 +47,4 @@ scholar_userid: ivTfnKgAAAAJ # your Google Scholar ID
 # x_username: # your X handle
 # youtube_id: # your youtube channel id (youtube.com/@<youtube_id>)
 # zotero_username: # your zotero username
-custom_social: # can be any name here other than the ones already defined above
-  logo: https://www.alberteinstein.com/wp-content/uploads/2024/03/cropped-favicon-192x192.png # can be png, svg, jpg
-  title: Custom Social
-  url: https://www.alberteinstein.com/
+# custom_social section removed (Einstein image)

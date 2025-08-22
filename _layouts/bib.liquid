@@ -29,7 +29,17 @@
         {% if entry.preview contains '://' %}
           <img class="preview z-depth-1 rounded" src="{{ entry.preview }}">
         {% else %}
-          {% assign entry_path = entry.preview | prepend: '/assets/img/publication_preview/' %}
+          {% comment %}
+            Allow absolute site paths (starting with '/'), or raw asset paths like 'assets/img/...'.
+            Otherwise, fall back to '/assets/img/publication_preview/'.
+          {% endcomment %}
+          {% if entry.preview | slice: 0, 1 == '/' %}
+            {% assign entry_path = entry.preview %}
+          {% elsif entry.preview contains 'assets/' %}
+            {% assign entry_path = '/' | append: entry.preview %}
+          {% else %}
+            {% assign entry_path = entry.preview | prepend: '/assets/img/publication_preview/' %}
+          {% endif %}
           {%
             include figure.liquid
             loading="eager"
