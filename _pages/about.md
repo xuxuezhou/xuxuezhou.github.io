@@ -2,11 +2,11 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Motto. Etc.
+subtitle: "<span style='color:#9aa0a6; font-size: 1.0rem;'>Undergraduate, National University of Singapore</span>"
 
 profile:
   align: right
-  image: prof_pic.jpg
+  image: xxz_prof_pic.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
     <p>555 your office number</p>
@@ -22,13 +22,20 @@ announcements:
   limit: 5 # leave blank to include all the news in the `_news` folder
 
 latest_posts:
-  enabled: true
+  enabled: false
   scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
   limit: 3 # leave blank to include all the blog posts
 ---
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+I currently work as a visiting scholar at [ECE](https://cde.nus.edu.sg/ece/), [National University of Singapore](https://nus.edu.sg/) under the supervision of [Prof. Xingyu Li](https://xingyul.github.io/).
 
-Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
+I completed my undergraduate studies with highest distinction at the National University of Singapore, majoring in Mathematics with a minor in Computer Science.
 
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+Prior to that, I had the honor to work in the [Tsinghua SAIL Group](https://ml.cs.tsinghua.edu.cn/), supervised by [Prof. Jun Zhu](https://ml.cs.tsinghua.edu.cn/~jun/index.shtml) and [Prof. Hang Su](http://www.suhangss.me/).
+
+## Research Interests
+
+My research focuses on robot learning and reinforcement learning, especially in manipulation. I aim to build universal robotic models to assist manipulators to deal with diverse tasks.
+
+
+<strong><span style="color:#d32f2f">I am looking for PhD opportunities in 2026 Fall!</span></strong>

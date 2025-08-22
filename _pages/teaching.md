@@ -2,11 +2,15 @@
 layout: page
 permalink: /teaching/
 title: teaching
-description: Materials for courses you taught. Replace this text with your description.
+description: Teaching experience and course materials
 nav: true
 nav_order: 6
 ---
 
-For now, this page is assumed to be a static description of your courses. You can convert it to a collection similar to `_projects/` so that you can have a dedicated page for each course.
+## National University of Singapore
 
-Organize your courses by years, topics, or universities, however you like!
+### Teaching Assistant — CS4246/CS5446: AI Planning and Decision Making
+Jan 2025 – Apr 2025 · Advisors: Prof. Akshay Narayan, Prof. Chun Kai Ling · [Course page](https://nusmods.com/courses/CS4246/ai-planning-and-decision-making)
+
+- Led tutorials and assessed assignments for 100+ undergraduate and graduate students
+- Contributed to assignment design and provided forum support
