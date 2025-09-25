@@ -14,4 +14,3 @@ PEAC proposes unsupervised pre-training for cross-embodiment reinforcement learn
 - **Code**: [github.com/thu-ml/CEURL](https://github.com/thu-ml/CEURL)
 
 {% include video.liquid path="assets/video/peac.mp4" class="img-fluid rounded z-depth-1" controls=true autoplay=false loop=false muted=false %}
-

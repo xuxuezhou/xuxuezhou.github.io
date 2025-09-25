@@ -33,5 +33,4 @@ Previously, I worked in [Tsinghua SAIL Group](https://ml.cs.tsinghua.edu.cn/) wi
 
 My research focuses on robot learning and reinforcement learning, especially in manipulation. I aim to build universal robotic models to assist manipulators to deal with diverse tasks.
 
-
 <strong><span style="color:#d32f2f">I am looking for PhD opportunities in 2026 Fall!</span></strong>

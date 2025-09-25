@@ -14,6 +14,4 @@ ManiBox scales simulation data generation to improve manipulation generalization
 - **Code & Dataset**: [github.com/thkkk/manibox](https://github.com/thkkk/manibox)
 - 公众号：[推文链接](https://mp.weixin.qq.com/s/AGOcR7oiYSIQ6zbmFdswgw)
 
-
 {% include figure.liquid path="assets/img/demo_fig.png" title="ManiBox" class="img-fluid rounded z-depth-1" %}
-
