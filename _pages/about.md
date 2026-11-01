@@ -32,4 +32,6 @@ I completed my B.Sc. in Mathematics (Highest Distinction) with a minor in Comput
 
 My current research focuses on world models in robotics: helping robots learn how the world works, so they can predict, plan and act more intelligently.
 
+I enjoy mathematics-driven solutions. When tackling a real-world problem, I start by modeling simple cases, then build a more general theoretical framework to solve it, and finally refine that framework until it is elegant and intuitive.
+
 My long-term interest is to study the brain 🧠. I want to understand the fundamental logic of cognition from the perspectives of cognitive science, psychology and biology, and use those insights to build the next generation of robot brains.

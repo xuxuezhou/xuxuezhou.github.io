@@ -117,19 +117,7 @@ layout: default
   <hr>
   <section class="home-section" id="blogs">
     <h2 class="section-heading">Blogs</h2>
-    {% assign home_posts = site.posts | where_exp: 'post', 'post.hidden != true' %}
-    {% if home_posts.size > 0 %}
-      <ul class="news-list">
-        {% for post in home_posts limit: 5 %}
-          <li>
-            <span class="news-date">[{{ post.date | date: '%m/%Y' }}]</span>
-            <a href="{% if post.redirect %}{{ post.redirect }}{% else %}{{ post.url | relative_url }}{% endif %}">{{ post.title }}</a>
-          </li>
-        {% endfor %}
-      </ul>
-    {% else %}
-      <p class="blogs-empty">Coming soon.</p>
-    {% endif %}
+    <p class="blogs-empty">Coming soon.</p>
   </section>
 
   {% if site.newsletter and site.newsletter.enabled and site.footer_fixed %}
