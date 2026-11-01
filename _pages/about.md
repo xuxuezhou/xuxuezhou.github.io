@@ -22,7 +22,7 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-I'm currently a research assistant and incoming PhD student at MARS Lab, working with Prof. Jianfei Yang and Dr. Wenyu Liang.
+I'm currently a research assistant and incoming PhD student at [MARS Lab](https://marslab.tech/contact/), working with [Prof. Jianfei Yang](https://marsyang.site/) and [Dr. Wenyu Liang](https://www.liangwenyu.com/).
 
 I completed my B.Sc. in Mathematics (Highest Distinction) with a minor in Computer Science at NUS. I was fortunate to work with [Prof. Benjamin Riviere](https://engineering.nyu.edu/faculty/benjamin-riviere), [Prof. Xingyu Liu](https://xingyul.github.io/), [Prof. Jun Zhu](https://ml.cs.tsinghua.edu.cn/~jun/index.shtml) and [Prof. Hang Su](http://www.suhangss.me/).
 
