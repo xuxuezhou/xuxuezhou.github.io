@@ -28,9 +28,9 @@ sections:
   <p>
     <strong class="hobby-calligraphy">Calligraphy.</strong> I practice Chinese calligraphy. I have studied Zhiyong's <em>Thousand Character
     Classic</em> (智永《千字文》), Wang Xizhi's <em>Preface to the Orchid Pavilion Collection</em> (《兰亭序》) and Yan
-    Zhenqing's <em>Draft of a Requiem to My Nephew</em> (《祭侄文稿》). My favorite piece is Su Dongpo's
-    <em>Cold Food Observance in Huangzhou</em> (《黄州寒食诗帖》), and I love a grand, free-spirited style with bold,
-    expressive ink.
+    Zhenqing's <em>Draft of a Requiem to My Nephew</em> (《祭侄文稿》). My favorite calligrapher is Su Shi
+    (Su Dongpo, 苏轼), especially his <em>Cold Food Observance in Huangzhou</em> (《黄州寒食诗帖》). I love his grand,
+    free-spirited style with bold, expressive ink.
   </p>
   <p>To me, badminton and calligraphy have something in common: both are full of rhythm (韵律).</p>
 </section>
