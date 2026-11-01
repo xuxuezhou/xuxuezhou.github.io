@@ -38,7 +38,7 @@ sections:
 
 <section class="home-section" id="tools">
   <h2 class="section-heading">Tools</h2>
-  <p>Some open-source tools I built in my spare time.</p>
+  <p>Some open-source tools I built in my spare time with vibe coding.</p>
   <ul class="tool-list">
     <li>
       <a class="tool-name" href="https://github.com/xuxuezhou/plume-studio">Plume Studio</a>
