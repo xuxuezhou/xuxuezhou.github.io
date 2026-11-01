@@ -60,10 +60,19 @@ ninja.data = [{
           
         },
       },{id: "news-i-complete-my-undergraduate-in-mathematics-with-highest-distinct-honour-from-national-university-of-singapore",
-          title: 'I complete my undergraduate in Mathematics with Highest Distinct honour from National University...',
+          title: '🎓 I complete my undergraduate in Mathematics with Highest Distinct honour from National...',
           description: "",
           section: "News",},{id: "news-started-as-a-visiting-scholar-at-the-department-of-electrical-and-computer-engineering-national-university-of-singapore",
-          title: 'Started as a Visiting Scholar at the Department of Electrical and Computer Engineering,...',
+          title: '🔬 Started as a Visiting Scholar at the Department of Electrical and Computer...',
+          description: "",
+          section: "News",},{id: "news-received-the-a-star-graduate-scholarship-computing",
+          title: '🏆 Received the A*STAR Graduate Scholarship (Computing).',
+          description: "",
+          section: "News",},{id: "news-started-as-a-research-associate-at-rrl-new-york-university",
+          title: '🗽 Started as a Research Associate at RRL, New York University.',
+          description: "",
+          section: "News",},{id: "news-our-paper-vector-quantized-world-model-is-out-on-arxiv-check-out-the-project-page",
+          title: '🎉 Our paper Vector-Quantized World Model is out on arXiv! Check out the...',
           description: "",
           section: "News",},{id: "projects-manibox",
           title: 'ManiBox',
@@ -90,13 +99,6 @@ ninja.data = [{
           window.open("https://github.com/xuxuezhou", "_blank");
         },
       },{
-        id: 'social-rss',
-        title: 'RSS Feed',
-        section: 'Socials',
-        handler: () => {
-          window.open("/feed.xml", "_blank");
-        },
-      },{
         id: 'social-scholar',
         title: 'Google Scholar',
         section: 'Socials',
@@ -110,30 +112,4 @@ ninja.data = [{
         handler: () => {
           window.open("", "_blank");
         },
-      },{
-      id: 'light-theme',
-      title: 'Change theme to light',
-      description: 'Change the theme of the site to Light',
-      section: 'Theme',
-      handler: () => {
-        setThemeSetting("light");
-      },
-    },
-    {
-      id: 'dark-theme',
-      title: 'Change theme to dark',
-      description: 'Change the theme of the site to Dark',
-      section: 'Theme',
-      handler: () => {
-        setThemeSetting("dark");
-      },
-    },
-    {
-      id: 'system-theme',
-      title: 'Use system default theme',
-      description: 'Change the theme of the site to System Default',
-      section: 'Theme',
-      handler: () => {
-        setThemeSetting("system");
-      },
-    },];
+      },];
