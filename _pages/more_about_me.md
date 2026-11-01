@@ -72,7 +72,12 @@ sections:
 
 <section class="home-section" id="photos">
   <h2 class="section-heading">Photos</h2>
-  <p class="blogs-empty">Coming soon.</p>
+  <div class="photo-grid">
+    <figure class="photo-item">
+      {% include figure.liquid path="assets/img/photos/nyc_under_empire_tower.jpg" alt="NYC under Empire Tower" class="photo-img" zoomable=true sizes="(min-width: 576px) 360px, 90vw" %}
+      <figcaption>NYC under Empire Tower</figcaption>
+    </figure>
+  </div>
 </section>
 
 <!-- WeChat QR popup (opened by the "reach out on WeChat" link above) -->

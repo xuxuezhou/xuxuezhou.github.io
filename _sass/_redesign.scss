@@ -886,3 +886,38 @@ footer.sticky-bottom {
     color: var(--global-hover-color);
   }
 }
+
+// Photos gallery (More about me)
+.photo-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 24px;
+  margin: 0.5rem 10px 0;
+
+  @media (min-width: 576px) {
+    grid-template-columns: repeat(auto-fill, minmax(260px, 320px));
+  }
+}
+
+.photo-item {
+  margin: 0;
+
+  figure {
+    margin: 0;
+  }
+
+  img.photo-img {
+    display: block;
+    width: 100%;
+    border-radius: 12px;
+    cursor: zoom-in;
+  }
+
+  figcaption {
+    margin-top: 0.5rem;
+    font-size: 15px;
+    font-weight: 600;
+    text-align: center;
+    color: var(--global-text-color);
+  }
+}
