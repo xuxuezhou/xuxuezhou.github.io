@@ -34,6 +34,10 @@
           </abbr>
         {% endif %}
       {% endif %}
+      {%- if entry.status and entry.abbr == null -%}
+        {% comment %} Status label for papers not yet accepted, e.g. "In submission" {% endcomment %}
+        <abbr class="badge rounded w-100 badge-status">{{ entry.status }}</abbr>
+      {%- endif %}
       {% if entry.preview_video %}
         {% comment %} Looping, muted teaser video; `preview` (if set) is used as the poster frame. {% endcomment %}
         {% if entry.preview_video contains '://' %}
