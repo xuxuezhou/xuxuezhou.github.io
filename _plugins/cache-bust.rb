@@ -42,8 +42,11 @@ module Jekyll
       CacheDigester.new(file_name: file_name, directory: nil).digest!
     end
 
+    # Hash the Sass sources (they live in `_sass/`, not `assets/_sass`), so the
+    # stylesheet URL changes whenever the styles change and browsers/CDN caches
+    # pick up the new CSS.
     def bust_css_cache(file_name)
-      CacheDigester.new(file_name: file_name, directory: 'assets/_sass').digest!
+      CacheDigester.new(file_name: file_name, directory: '_sass').digest!
     end
   end
 end
