@@ -922,7 +922,7 @@ footer.sticky-bottom {
   img.photo-img {
     display: block;
     width: 100%;
-    border-radius: 12px;
+    border-radius: 0; // keep the full frame, square corners
     cursor: zoom-in;
   }
 
