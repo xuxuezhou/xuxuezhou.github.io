@@ -415,6 +415,39 @@ article {
   color: var(--global-text-color-light);
 }
 
+.sections-page .home-section > p,
+.proposal-list,
+.tool-list {
+  margin-left: 10px;
+}
+
+.proposal-list,
+.tool-list {
+  padding-left: 1.5rem;
+
+  li {
+    margin-bottom: 0.6rem;
+  }
+}
+
+.tool-list .tool-name {
+  font-weight: 600;
+}
+
+.tool-links {
+  white-space: nowrap;
+
+  &::before {
+    content: "[";
+    color: var(--global-text-color);
+  }
+
+  &::after {
+    content: "]";
+    color: var(--global-text-color);
+  }
+}
+
 .more-about-me {
   margin: 0.25rem 0 0;
 }
