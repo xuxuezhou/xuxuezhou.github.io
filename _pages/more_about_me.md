@@ -12,6 +12,27 @@ sections:
     title: Tools
   - id: photos
     title: Photos
+photos:
+  - file: nyc_under_empire_tower.jpg
+    width: 1125
+    height: 2000
+    title: NYC under Empire Tower
+  - file: hot_air_balloon.jpg
+    width: 814
+    height: 1588
+    title: Hot Air Balloon
+  - file: graduate_trip_iceland.jpg
+    width: 1080
+    height: 1620
+    title: Graduate Trip @ Iceland
+  - file: flower_field.jpg
+    width: 907
+    height: 1616
+    title: Flower Field
+  - file: my_favorite_goose.jpg
+    width: 1333
+    height: 2000
+    title: My Favorite Goose
 ---
 
 <section class="home-section" id="hobbies">
@@ -73,10 +94,16 @@ sections:
 <section class="home-section" id="photos">
   <h2 class="section-heading">Photos</h2>
   <div class="photo-grid">
-    <figure class="photo-item">
-      {% include figure.liquid path="assets/img/photos/nyc_under_empire_tower.jpg" alt="NYC under Empire Tower" class="photo-img" zoomable=true sizes="(min-width: 576px) 360px, 90vw" %}
-      <figcaption>NYC under Empire Tower</figcaption>
-    </figure>
+    {% for photo in page.photos %}
+      {% assign photo_path = photo.file | prepend: 'assets/img/photos/' %}
+      {% comment %} Width share follows the aspect ratio, so every photo in a row has the same height {% endcomment %}
+      {% assign ratio = photo.width | times: 1.0 | divided_by: photo.height %}
+      {% assign basis = ratio | times: 200 | round %}
+      <figure class="photo-item" style="flex: {{ ratio | round: 4 }} 1 {{ basis }}px">
+        {% include figure.liquid path=photo_path alt=photo.title class="photo-img" zoomable=true sizes="(min-width: 576px) 280px, 45vw" %}
+        <figcaption>{{ photo.title }}</figcaption>
+      </figure>
+    {% endfor %}
   </div>
 </section>
 

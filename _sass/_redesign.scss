@@ -893,20 +893,25 @@ footer.sticky-bottom {
   }
 }
 
-// Photos gallery (More about me)
+// Photos gallery (More about me): justified rows. Each item's flex-grow and
+// flex-basis are proportional to its aspect ratio (set inline), so photos in
+// a row share one height and none is cropped.
 .photo-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
-  gap: 24px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px 16px;
   margin: 0.5rem 10px 0;
 
-  @media (min-width: 576px) {
-    grid-template-columns: repeat(auto-fill, minmax(260px, 320px));
+  // Keeps a lone photo on the last row from stretching to full width
+  &::after {
+    content: "";
+    flex: 0.6 1 0;
   }
 }
 
 .photo-item {
   margin: 0;
+  min-width: 0;
 
   figure {
     margin: 0;
