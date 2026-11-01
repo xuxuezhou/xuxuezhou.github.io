@@ -36,7 +36,7 @@ layout: default
         <div class="more-info">{{ page.profile.more_info }}</div>
       {% endif %}
 
-      <!-- Link row: CV, contact links, then the other site pages -->
+      <!-- Link row: CV and contact links -->
       {% assign sorted_pages = site.pages | sort: 'nav_order' %}
       <div class="link-row">
         {%- for p in sorted_pages -%}
@@ -47,22 +47,7 @@ layout: default
         {%- if page.social %}
           {% include social_text.liquid %}
         {%- endif -%}
-        {%- for p in sorted_pages -%}
-          {%- if p.nav and p.autogen == null and p.dropdown != true and p.permalink != '/cv/' -%}
-            {%- if p.permalink contains '://' -%}
-              {%- assign url = p.permalink -%}
-            {%- else -%}
-              {%- assign url = p.url | relative_url -%}
-            {%- endif %}
-            <span class="link-item"
-              ><a href="{{ url }}">{{ p.title | capitalize }}</a></span
-            >
-          {%- endif -%}
-        {%- endfor %}
       </div>
-      {% if page.social and site.contact_note %}
-        <p class="contact-note">{{ site.contact_note }}</p>
-      {% endif %}
     </div>
 
     <div class="home-intro-bio">
