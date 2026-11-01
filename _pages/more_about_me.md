@@ -17,16 +17,16 @@ sections:
 <section class="home-section" id="hobbies">
   <h2 class="section-heading">Hobbies</h2>
   <p>
-    <strong>Badminton.</strong> I love playing badminton. I won the team gold medal at the Shaoxing Badminton
+    <strong class="hobby-badminton">Badminton.</strong> I love playing badminton. I won the team gold medal at the Shaoxing Badminton
     Championships and reached the top four in both singles and doubles. My favorite players are Shi Yuqi and Kento
     Momota. If you'd like to play a game together, feel free to <a id="WeChatBtn" href="javascript:void(0)" title="WeChat">reach out on WeChat</a>!
   </p>
   <p>
-    <strong>Photography.</strong> I like observing the world through photography, especially street photography and
+    <strong class="hobby-photography">Photography.</strong> I like observing the world through photography, especially street photography and
     nature landscapes.
   </p>
   <p>
-    <strong>Calligraphy.</strong> I practice Chinese calligraphy. I have studied Zhiyong's <em>Thousand Character
+    <strong class="hobby-calligraphy">Calligraphy.</strong> I practice Chinese calligraphy. I have studied Zhiyong's <em>Thousand Character
     Classic</em> (智永《千字文》), Wang Xizhi's <em>Preface to the Orchid Pavilion Collection</em> (《兰亭序》) and Yan
     Zhenqing's <em>Draft of a Requiem to My Nephew</em> (《祭侄文稿》). My favorite piece is Su Dongpo's
     <em>Cold Food Observance in Huangzhou</em> (《黄州寒食诗帖》), and I love a grand, free-spirited style with bold,

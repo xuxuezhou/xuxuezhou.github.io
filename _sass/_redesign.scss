@@ -536,7 +536,7 @@ article {
           font-weight: 600;
           letter-spacing: 0.02em;
           color: #fff !important;
-          background-color: var(--global-theme-color);
+          background-color: var(--global-teal);
           border-radius: 6px !important;
           box-shadow: 0 1px 4px rgba(0, 0, 0, 0.25);
 
@@ -548,6 +548,14 @@ article {
 
         abbr.badge.badge-status {
           background-color: #6b7280;
+        }
+
+        abbr.badge.badge-status-in-submission {
+          background-color: var(--global-indigo);
+        }
+
+        abbr.badge.badge-status-arxiv {
+          background-color: var(--global-rose);
         }
 
         figure {
@@ -817,5 +825,64 @@ footer.sticky-bottom {
     &:hover {
       color: var(--global-hover-color);
     }
+  }
+}
+
+/* -----------------------------------------------------------------------------
+ * Secondary accent colours: one job each
+ * -------------------------------------------------------------------------- */
+
+// Section-heading underlines rotate through the palette
+#news .section-heading,
+#hobbies .section-heading {
+  text-decoration-color: var(--global-amber);
+}
+
+#publications .section-heading,
+#proposals .section-heading {
+  text-decoration-color: var(--global-teal);
+}
+
+#blogs .section-heading,
+#tools .section-heading {
+  text-decoration-color: var(--global-rose);
+}
+
+#photos .section-heading {
+  text-decoration-color: var(--global-indigo);
+}
+
+// News: coloured dates and highlighted awards
+.news-list .news-date {
+  color: var(--global-indigo);
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+}
+
+.news-highlight {
+  color: var(--global-rose);
+  font-weight: 600;
+}
+
+// Hobbies: each lead-in gets its own colour
+.hobby-badminton {
+  color: var(--global-green);
+}
+
+.hobby-photography {
+  color: var(--global-indigo);
+}
+
+.hobby-calligraphy {
+  color: var(--global-rose);
+}
+
+// Tool names
+.tool-list .tool-name,
+.tool-list .tool-name:visited {
+  color: var(--global-teal);
+
+  &:hover {
+    color: var(--global-hover-color);
   }
 }
