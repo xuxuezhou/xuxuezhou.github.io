@@ -34,6 +34,38 @@ $black-color: #000000 !default;
 
 // Theme colors
 
+// Light palette
+$page-bg-light: #fafaf8;
+$surface-light: #ffffff;
+$surface-muted-light: #f2f3f1;
+$ink-light: #1b1f27;
+$ink-muted-light: #5f6673;
+$accent-light: #2554c7;
+$accent-light-hover: #1a3f9e;
+$highlight-light: #c62828;
+
+// Dark palette
+$page-bg-dark: #111318;
+$surface-dark: #181b22;
+$surface-muted-dark: #1f232b;
+$ink-dark: #e4e7ec;
+$ink-muted-dark: #9aa3b2;
+$accent-dark: #8aaaff;
+$accent-dark-hover: #b3c7ff;
+$highlight-dark: #ff8a80;
+
+// Typography
+$font-sans:
+  "Inter",
+  -apple-system,
+  BlinkMacSystemFont,
+  "Segoe UI",
+  Roboto,
+  "Helvetica Neue",
+  Arial,
+  sans-serif;
+$font-serif: "Source Serif 4", "Source Serif Pro", Georgia, "Times New Roman", serif;
+
 $code-bg-color-light: rgba($purple-color, 0.05);
 $code-bg-color-dark: #2c3237 !default;
 
