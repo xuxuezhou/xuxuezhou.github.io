@@ -16,8 +16,24 @@ sections:
 
 <section class="home-section" id="hobbies">
   <h2 class="section-heading">Hobbies</h2>
-  <p>In my free time, I love playing badminton. My favorite players are Shi Yuqi and Kento Momota.</p>
-  <p>I also enjoy photography, especially architecture and nature.</p>
+  <p>
+    <strong>Badminton.</strong> I love playing badminton. I won the team gold medal at the Shaoxing Badminton
+    Championships and reached the top four in both singles and doubles. My favorite players are Shi Yuqi and Kento
+    Momota. If you'd like to play a game together, feel free to
+    <a href="mailto:{{ site.data.socials.email | encode_email }}">reach out</a>!
+  </p>
+  <p>
+    <strong>Photography.</strong> I like observing the world through photography, especially street photography and
+    nature landscapes.
+  </p>
+  <p>
+    <strong>Calligraphy.</strong> I practice Chinese calligraphy. I have studied Zhiyong's <em>Thousand Character
+    Classic</em> (智永《千字文》), Wang Xizhi's <em>Preface to the Orchid Pavilion Collection</em> (《兰亭序》) and Yan
+    Zhenqing's <em>Draft of a Requiem to My Nephew</em> (《祭侄文稿》). My favorite piece is Su Dongpo's
+    <em>Cold Food Observance in Huangzhou</em> (《黄州寒食诗帖》), and I love a grand, free-spirited style with bold,
+    expressive ink.
+  </p>
+  <p>To me, badminton and calligraphy have something in common: both are full of rhythm (韵律).</p>
 </section>
 
 <hr>
