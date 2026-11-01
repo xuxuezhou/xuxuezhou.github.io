@@ -2,91 +2,111 @@
 layout: default
 ---
 <div class="post home">
-  <div class="home-grid">
-    <!-- Profile sidebar -->
-    <aside class="home-sidebar">
-      <div class="profile-card">
-        {% if page.profile and page.profile.image %}
-          {% assign profile_image_path = page.profile.image | prepend: 'assets/img/' %}
-          {% if page.profile.image_circular %}
-            {% assign profile_image_class = 'img-fluid profile-photo rounded-circle' %}
-          {% else %}
-            {% assign profile_image_class = 'img-fluid profile-photo' %}
-          {% endif %}
-          {% capture sizes %}(min-width: 992px) 280px, (min-width: 576px) 240px, 60vw{% endcapture %}
-          <div class="profile-photo-wrap">
-            {%
-              include figure.liquid loading="eager" path=profile_image_path class=profile_image_class sizes=sizes alt=page.profile.image
-              cache_bust=true
-            %}
-          </div>
-        {% endif %}
+  <!-- Name -->
+  <header class="home-header">
+    <h1 class="page-heading">
+      {% if site.title == 'blank' %}
+        {{ site.first_name }}
+        {{ site.middle_name }}
+        {{ site.last_name }}
+      {% else %}
+        {{ site.title }}
+      {% endif %}
+    </h1>
+  </header>
 
-        <header class="post-header profile-header">
-          <h1 class="post-title profile-name">
-            {% if site.title == 'blank' %}
-              <span class="font-weight-bold">{{ site.first_name }}</span> {{ site.middle_name }}
-              {{ site.last_name }}
-            {% else %}
-              {{ site.title }}
-            {% endif %}
-          </h1>
-          <p class="desc">{{ page.subtitle }}</p>
-        </header>
-
-        {% if page.profile.more_info %}
-          <div class="more-info">{{ page.profile.more_info }}</div>
+  <!-- Photo + links | Bio -->
+  <div class="home-intro">
+    <div class="home-intro-photo">
+      {% if page.profile and page.profile.image %}
+        {% assign profile_image_path = page.profile.image | prepend: 'assets/img/' %}
+        {% if page.profile.image_circular %}
+          {% assign profile_image_class = 'img-fluid profile-photo rounded-circle' %}
+        {% else %}
+          {% assign profile_image_class = 'img-fluid profile-photo' %}
         {% endif %}
+        {% capture sizes %}(min-width: 900px) 260px, (min-width: 576px) 30vw, 70vw{% endcapture %}
+        {%
+          include figure.liquid loading="eager" path=profile_image_path class=profile_image_class sizes=sizes alt=page.profile.image
+          cache_bust=true
+        %}
+      {% endif %}
 
-        {% if page.social %}
-          <div class="social">
-            <div class="contact-icons">{% include social.liquid %}</div>
-            <div class="contact-note">{{ site.contact_note }}</div>
-          </div>
-        {% endif %}
+      {% if page.profile.more_info %}
+        <div class="more-info">{{ page.profile.more_info }}</div>
+      {% endif %}
+
+      <!-- Link row: CV, contact links, then the other site pages -->
+      {% assign sorted_pages = site.pages | sort: 'nav_order' %}
+      <div class="link-row">
+        {%- for p in sorted_pages -%}
+          {%- if p.nav and p.permalink == '/cv/' %}
+            <span class="link-item"><a href="{{ p.url | relative_url }}">CV</a></span>
+          {%- endif -%}
+        {%- endfor -%}
+        {%- if page.social %}
+          {% include social_text.liquid %}
+        {%- endif -%}
+        {%- for p in sorted_pages -%}
+          {%- if p.nav and p.autogen == null and p.dropdown != true and p.permalink != '/cv/' -%}
+            {%- if p.permalink contains '://' -%}
+              {%- assign url = p.permalink -%}
+            {%- else -%}
+              {%- assign url = p.url | relative_url -%}
+            {%- endif %}
+            <span class="link-item"
+              ><a href="{{ url }}">{{ p.title | capitalize }}</a></span
+            >
+          {%- endif -%}
+        {%- endfor %}
       </div>
-    </aside>
-
-    <!-- Main column -->
-    <article class="home-main">
-      <section class="home-section about-content">
-        <h2 class="section-title">about</h2>
-        {{ content }}
-      </section>
-
-      <!-- News -->
-      {% if page.announcements and page.announcements.enabled %}
-        <section class="home-section">
-          <h2 class="section-title">
-            <a href="{{ '/news/' | relative_url }}">news</a>
-          </h2>
-          {% include news.liquid limit=true %}
-        </section>
+      {% if page.social and site.contact_note %}
+        <p class="contact-note">{{ site.contact_note }}</p>
       {% endif %}
+    </div>
 
-      <!-- Latest posts -->
-      {% if page.latest_posts and page.latest_posts.enabled %}
-        <section class="home-section">
-          <h2 class="section-title">
-            <a href="{{ '/blog/' | relative_url }}">latest posts</a>
-          </h2>
-          {% include latest_posts.liquid %}
-        </section>
+    <div class="home-intro-bio">
+      {% if page.subtitle %}
+        <p class="desc">{{ page.subtitle }}</p>
       {% endif %}
-
-      <!-- Selected papers -->
-      {% if page.selected_papers %}
-        <section class="home-section">
-          <h2 class="section-title">
-            <a href="{{ '/publications/' | relative_url }}">selected publications</a>
-          </h2>
-          {% include selected_papers.liquid %}
-        </section>
-      {% endif %}
-
-      {% if site.newsletter and site.newsletter.enabled and site.footer_fixed %}
-        {% include newsletter.liquid center=true %}
-      {% endif %}
-    </article>
+      {{ content }}
+    </div>
   </div>
+
+  <!-- News -->
+  {% if page.announcements and page.announcements.enabled %}
+    <hr>
+    <section class="home-section">
+      <h2 class="section-heading">
+        <a href="{{ '/news/' | relative_url }}">News</a>
+      </h2>
+      {% include news.liquid limit=true %}
+    </section>
+  {% endif %}
+
+  <!-- Latest posts -->
+  {% if page.latest_posts and page.latest_posts.enabled %}
+    <hr>
+    <section class="home-section">
+      <h2 class="section-heading">
+        <a href="{{ '/blog/' | relative_url }}">Latest Posts</a>
+      </h2>
+      {% include latest_posts.liquid %}
+    </section>
+  {% endif %}
+
+  <!-- Selected papers -->
+  {% if page.selected_papers %}
+    <hr>
+    <section class="home-section">
+      <h2 class="section-heading">
+        <a href="{{ '/publications/' | relative_url }}">Selected Publications</a>
+      </h2>
+      {% include selected_papers.liquid %}
+    </section>
+  {% endif %}
+
+  {% if site.newsletter and site.newsletter.enabled and site.footer_fixed %}
+    {% include newsletter.liquid center=true %}
+  {% endif %}
 </div>

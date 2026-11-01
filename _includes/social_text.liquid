@@ -1,0 +1,45 @@
+{%- comment -%}
+  Text version of the social links, used in the home page link row
+  ("| CV | Email | GitHub | Google Scholar |"). Each link is a span.link-item;
+  the "|" separators are drawn in CSS. Reads the same _data/socials.yml as social.liquid.
+{%- endcomment -%}
+{%- for social in site.data.socials -%}
+  {%- assign key = social[0] -%}
+  {%- assign val = social[1] -%}
+  {%- case key -%}
+    {%- when 'email' %}
+      <span class="link-item"><a href="mailto:{{ val | encode_email }}">Email</a></span>
+    {%- when 'github_username' %}
+      <span class="link-item"><a href="https://github.com/{{ val }}">GitHub</a></span>
+    {%- when 'scholar_userid' %}
+      <span class="link-item"><a href="https://scholar.google.com/citations?user={{ val }}">Google Scholar</a></span>
+    {%- when 'linkedin_username' %}
+      <span class="link-item"><a href="https://www.linkedin.com/in/{{ val }}">LinkedIn</a></span>
+    {%- when 'x_username' %}
+      <span class="link-item"><a href="https://twitter.com/{{ val }}">X</a></span>
+    {%- when 'orcid_id' %}
+      <span class="link-item"><a href="https://orcid.org/{{ val }}">ORCID</a></span>
+    {%- when 'semanticscholar_id' %}
+      <span class="link-item"><a href="https://www.semanticscholar.org/author/{{ val }}">Semantic Scholar</a></span>
+    {%- when 'youtube_id' %}
+      <span class="link-item"><a href="https://youtube.com/@{{ val }}">YouTube</a></span>
+    {%- when 'work_url' %}
+      <span class="link-item"><a href="{{ val }}">Work</a></span>
+    {%- when 'rss_icon' %}
+      {%- if val %}
+        <span class="link-item"><a href="{{ '/feed.xml' | relative_url }}">RSS</a></span>
+      {%- endif -%}
+    {%- when 'wechat_qr' %}
+      <span class="link-item"><a id="WeChatBtn" href="javascript:void(0)">WeChat</a></span>
+      <div id="WeChatMod" class="wechat-modal">
+        <img src="{{ val | prepend: 'assets/img/' | relative_url }}" alt="WeChat QR" id="WeChatQR">
+      </div>
+      <script defer src="{{ '/assets/js/wechat.js' | relative_url | bust_file_cache }}" type="text/javascript"></script>
+    {%- else -%}
+      {%- if val.url %}
+        <span class="link-item"
+          ><a href="{{ val.url }}">{{ val.title }}</a></span
+        >
+      {%- endif -%}
+  {%- endcase -%}
+{%- endfor %}
