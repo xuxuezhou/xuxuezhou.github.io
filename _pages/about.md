@@ -29,4 +29,4 @@ I completed my B.Sc. in Mathematics (Highest Distinction) with a minor in Comput
 
 My current research focuses on world models in robotics: helping robots learn how the world works, so they can predict, plan and act more intelligently.
 
-My long-term interest is to study the brain 🧠 I want to understand the fundamental logic of cognition from the perspectives of cognitive science, psychology and biology, and use those insights to build the next generation of robot brains.
+My long-term interest is to study the brain 🧠. I want to understand the fundamental logic of cognition from the perspectives of cognitive science, psychology and biology, and use those insights to build the next generation of robot brains.
