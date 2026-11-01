@@ -306,6 +306,7 @@ filtered_bibtex_keywords:
   [
     abbr,
     abstract,
+    preview_video,
     additional_info,
     altmetric,
     annotation,

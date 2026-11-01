@@ -2,7 +2,7 @@
 layout: page
 title: PEAC
 description: Unsupervised pre-training for cross-embodiment reinforcement learning
-img: assets/img/Overview.png
+img: assets/img/publication_preview/peac_teaser.jpg
 importance: 2
 category: work
 related_publications: false

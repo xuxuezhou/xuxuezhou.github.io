@@ -2,7 +2,7 @@
 layout: page
 title: ManiBox
 description: Enhancing spatial grasping generalization via scalable simulation data generation
-img: assets/img/manibox_overview.png
+img: assets/img/publication_preview/manibox_teaser.jpg
 importance: 3
 category: work
 related_publications: false

@@ -1,6 +1,33 @@
 ---
 ---
 
+@article{xu2026vqwm,
+  title={Vector-Quantized World Model: Latent Feedback Motion Planning for Robot Manipulation},
+  author={Xu*, Xuezhou and Wang*, Chung-Pang and Li, Zhenzhen and Riviere, Benjamin},
+  journal={arXiv preprint arXiv:2610.25600},
+  year={2026},
+  eprint={2610.25600},
+  archivePrefix={arXiv},
+  primaryClass={cs.RO},
+  arxiv={2610.25600},
+  website={https://xuxuezhou.github.io/vq-wm/},
+  annotation={* Equal contribution},
+  abstract={Visual world models have shown strong potential for robot planning, yet long-horizon manipulation remains challenging: prediction errors compound over autoregressive rollouts, search complexity grows with the horizon, and planners propose latent targets that the low-level controller cannot reliably reach. We introduce VQ-WM, a latent feedback motion planning framework that vector-quantizes the latent space by controller reachability, measured as first-passage time, so a discrete planner can search far ahead over reachable states while a continuous controller tracks each planned state with visual feedback.},
+  preview={assets/img/publication_preview/vqwm_overview.png},
+  selected={true}
+}
+
+@misc{xu2026toss2reorient,
+  title={Toss2Reorient: Dynamic In-Air Object Reorientation via Toss-and-Catch with Dexterous Hand},
+  author={Xu*, Xuezhou and Li*, Yutong and Liu, Jinpeng and Liu, Xingyu},
+  year={2026},
+  website={https://sites.google.com/view/toss2reorient},
+  annotation={* Equal contribution},
+  abstract={In-hand object reorientation has been extensively studied in robotic manipulation, yet it remains limited by slow execution and a tendency to become trapped in contact-constrained local optima when handling large or geometrically complex objects. These limitations often lead to prolonged manipulation time or failure on challenging shapes. We propose Toss2Reorient, a dynamic manipulation framework for in-air object reorientation through a toss-and-catch paradigm. By leveraging toss-and-catch motion together with coordinated hand--arm control, the method reduces the average execution time by 50.6\% across 30 diverse objects in simulation. While dynamic manipulation introduces additional instability, wrist-mounted 6-axis force/torque (F/T) sensing helps stabilize interaction dynamics, with only a modest 1.8-point increase in macro-average drop rate relative to in-hand reorientation. The policy is trained using asymmetric Proximal Policy Optimization, where the critic has access to privileged object state information while the actor operates on partial observations. We evaluate the proposed framework on 30 diverse objects in simulation. Experimental results show substantially faster reorientation compared to conventional in-hand reorientation, particularly for large and geometrically complex objects. Furthermore, the learned policy demonstrates strong zero-shot generalization, successfully performing reorientation on unseen objects with different shapes and physical properties without additional training.},
+  preview={assets/img/publication_preview/toss2reorient.jpg},
+  selected={true}
+}
+
 @article{ying2024peac,
   title={Peac: Unsupervised pre-training for cross-embodiment reinforcement learning},
   author={Ying, Chengyang and Zhongkai, Hao and Zhou, Xinning and Xu, Xuezhou and Su, Hang and Zhang, Xingxing and Zhu, Jun},
@@ -9,7 +36,10 @@
   volume={37},
   pages={54632--54669},
   year={2024},
-  preview={assets/img/Overview.png},
+  website={https://yingchengyang.github.io/ceurl},
+  pdf={https://openreview.net/pdf?id=LyAFfdx8YF},
+  preview={assets/img/publication_preview/peac_teaser.jpg},
+  preview_video={assets/video/teasers/peac_teaser.mp4},
   selected={true}
 }
 
@@ -18,8 +48,11 @@
   author={Tan*, Hengkai and Xu*, Xuezhou and Ying, Chengyang and Mao, Xinyi and Liu, Songming and Zhang, Xingxing and Su, Hang and Zhu, Jun},
   journal={arXiv preprint arXiv:2411.01850},
   year={2024},
+  website={https://thkkk.github.io/manibox},
+  arxiv={2411.01850},
   annotation={* Equal contribution},
-  preview={assets/img/manibox_overview.png},
+  preview={assets/img/publication_preview/manibox_teaser.jpg},
+  preview_video={assets/video/teasers/manibox_teaser.mp4},
   selected={true}
 }
 

@@ -348,6 +348,7 @@ article {
       }
 
       .abbr {
+        position: relative;
         text-align: center;
         margin-bottom: 0.75rem;
 
@@ -355,16 +356,38 @@ article {
           margin-bottom: 0;
         }
 
-        // Venue is already printed in the text column.
+        // Venue label (e.g. "NeurIPS 2024") on top of the thumbnail
         abbr.badge {
-          display: none !important;
+          position: absolute;
+          z-index: 2;
+          top: 8px;
+          left: calc(5% + 8px);
+          width: auto !important;
+          margin: 0;
+          padding: 0.3em 0.6em;
+          font-family: $font-sans;
+          font-size: 13px;
+          font-weight: 600;
+          letter-spacing: 0.02em;
+          color: #fff !important;
+          background-color: var(--global-theme-color);
+          border-radius: 6px !important;
+          box-shadow: 0 1px 4px rgba(0, 0, 0, 0.25);
+
+          a,
+          div {
+            color: #fff !important;
+          }
         }
 
         figure {
           margin: 0;
         }
 
-        img.preview {
+        img.preview,
+        video.preview-video {
+          display: block;
+          margin: 0 auto;
           width: 90%;
           border-radius: $photo-radius !important;
           box-shadow: none !important;
@@ -376,6 +399,14 @@ article {
         font-weight: 600;
         line-height: 1.35;
         margin-bottom: 0.15rem;
+
+        a {
+          color: var(--global-theme-color);
+
+          &:hover {
+            color: var(--global-hover-color);
+          }
+        }
       }
 
       .author {
