@@ -505,10 +505,16 @@ article {
       margin-bottom: 0;
 
       > .row {
-        margin: 0 0 12px;
+        margin: 0;
         padding: 15px 0;
-        background: var(--global-warm-tint);
         border-radius: 12px;
+      }
+
+      // Faint warm background only for papers marked `highlight={true}` or
+      // with an `award` in papers.bib
+      > .row.highlighted {
+        margin-bottom: 12px;
+        background: var(--global-warm-tint);
       }
 
       .abbr {
