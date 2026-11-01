@@ -145,6 +145,103 @@ body.is-home {
 }
 
 /* -----------------------------------------------------------------------------
+ * Home page section navigation (sticky; links scroll to blocks below)
+ * -------------------------------------------------------------------------- */
+
+$home-nav-height: 52px;
+
+html {
+  scroll-behavior: smooth;
+
+  @media (prefers-reduced-motion: reduce) {
+    scroll-behavior: auto;
+  }
+}
+
+body.is-home .container.mt-5[role="main"] {
+  margin-top: 0 !important;
+}
+
+.home-nav {
+  position: sticky;
+  top: 0;
+  z-index: 1020;
+  background: var(--global-bg-color);
+  // Paint the bar edge to edge without widening the page. (No calc(): the
+  // production CSS minifier breaks it.)
+  box-shadow:
+    0 0 0 100vmax var(--global-bg-color),
+    0 1px 0 100vmax rgba(0, 0, 0, 0.08);
+  clip-path: inset(0 -100vmax -1px);
+}
+
+.home-nav-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 4px 16px;
+  min-height: $home-nav-height;
+  padding: 6px 20px;
+}
+
+.home-nav-brand,
+.home-nav-brand:visited {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--global-text-color);
+  white-space: nowrap;
+
+  &:hover {
+    color: var(--global-hover-color);
+  }
+}
+
+.home-nav-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2px 4px;
+
+  a,
+  a:visited {
+    font-size: 16px;
+    color: var(--global-theme-color);
+    padding: 4px 10px;
+    border-radius: 6px;
+    white-space: nowrap;
+    transition:
+      color 0.15s ease,
+      background-color 0.15s ease;
+  }
+
+  a:hover {
+    color: var(--global-hover-color);
+  }
+
+  a.active {
+    color: var(--global-text-color);
+    font-weight: 600;
+    background: var(--global-accent-soft-color);
+  }
+}
+
+@media (max-width: 575.98px) {
+  .home-nav-inner {
+    justify-content: center;
+  }
+
+  .home-nav-brand {
+    display: none;
+  }
+}
+
+#about,
+#news,
+#publications {
+  scroll-margin-top: $home-nav-height + 12px;
+}
+
+/* -----------------------------------------------------------------------------
  * Page headers (inner pages)
  * -------------------------------------------------------------------------- */
 
