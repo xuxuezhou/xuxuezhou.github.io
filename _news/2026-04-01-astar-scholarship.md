@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-🏆 Received the <span class="news-highlight">A\*STAR Graduate Scholarship (Computing)</span>.
+🏆 Honored to receive the <span class="news-highlight">A\*STAR Graduate Scholarship (Computing)</span>! Grateful for the support from A\*STAR!
