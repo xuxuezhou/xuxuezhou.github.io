@@ -320,7 +320,7 @@ article {
   img.profile-photo {
     display: block;
     width: 100%;
-    border-radius: $photo-radius;
+    border-radius: 0; // square corners, full frame
   }
 
   img.profile-photo.rounded-circle {
