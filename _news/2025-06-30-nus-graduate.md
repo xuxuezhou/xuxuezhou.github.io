@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-I complete my undergraduate in Mathematics with Highest Distinct honour from National University of Singapore!
+I complete my undergraduate in Mathematics with Highest Distinct honour from National University of Singapore! 🎓
