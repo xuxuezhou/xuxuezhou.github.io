@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Started as a Visiting Scholar at the Department of Electrical and Computer Engineering, National University of Singapore. 🔬
+🔬 Started as a Visiting Scholar at the Department of Electrical and Computer Engineering, National University of Singapore.

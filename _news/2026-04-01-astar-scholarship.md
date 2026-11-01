@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Received the A\*STAR Graduate Scholarship (Computing). 🏆
+🏆 Received the A\*STAR Graduate Scholarship (Computing).

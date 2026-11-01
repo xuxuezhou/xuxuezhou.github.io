@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Started as a Research Associate at RRL, [New York University](https://www.nyu.edu/). 🗽
+🗽 Started as a Research Associate at RRL, [New York University](https://www.nyu.edu/).
