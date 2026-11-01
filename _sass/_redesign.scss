@@ -262,6 +262,12 @@ article {
 
   @media (min-width: 576px) {
     text-align: justify;
+    // Centre the bio against the photo column now that it is shorter.
+    align-self: center;
+  }
+
+  > :last-child {
+    margin-bottom: 0;
   }
 
   p {
