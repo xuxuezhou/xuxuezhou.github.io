@@ -893,19 +893,21 @@ footer.sticky-bottom {
   }
 }
 
-// Photos gallery (More about me): justified rows. Each item's flex-grow and
-// flex-basis are proportional to its aspect ratio (set inline), so photos in
-// a row share one height and none is cropped.
+// Photos gallery (More about me): each `row` group is a justified row. An
+// item's flex-grow and flex-basis are proportional to its aspect ratio (set
+// inline), so photos in a row share one height, fill the width, and none is
+// cropped.
 .photo-grid {
   display: flex;
   flex-wrap: wrap;
   gap: 20px 16px;
-  margin: 0.5rem 10px 0;
+  margin: 0.5rem 10px 24px;
+}
 
-  // Keeps a lone photo on the last row from stretching to full width
-  &::after {
-    content: "";
-    flex: 0.6 1 0;
+// Phones: one photo per line at full width
+@media (max-width: 575.98px) {
+  .photo-grid .photo-item {
+    flex: 1 1 100% !important;
   }
 }
 

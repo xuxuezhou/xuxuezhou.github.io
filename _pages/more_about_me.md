@@ -13,26 +13,32 @@ sections:
   - id: photos
     title: Photos
 photos:
+  # Photos sharing a `row` sit side by side at the same height (no cropping).
   - file: nyc_under_empire_tower.jpg
     width: 1125
     height: 2000
     title: NYC under Empire Tower
+    row: 1
   - file: hot_air_balloon.jpg
     width: 814
     height: 1588
     title: Hot Air Balloon
-  - file: graduate_trip_iceland.jpg
-    width: 1080
-    height: 1620
-    title: Graduate Trip @ Iceland
+    row: 1
   - file: flower_field.jpg
     width: 907
     height: 1616
     title: Flower Field
+    row: 1
+  - file: graduate_trip_iceland.jpg
+    width: 1080
+    height: 1620
+    title: Graduate Trip @ Iceland
+    row: 2
   - file: my_favorite_goose.jpg
     width: 1333
     height: 2000
     title: My Favorite Goose
+    row: 2
 ---
 
 <section class="home-section" id="hobbies">
@@ -93,18 +99,21 @@ photos:
 
 <section class="home-section" id="photos">
   <h2 class="section-heading">Photos</h2>
-  <div class="photo-grid">
-    {% for photo in page.photos %}
-      {% assign photo_path = photo.file | prepend: 'assets/img/photos/' %}
-      {% comment %} Width share follows the aspect ratio, so every photo in a row has the same height {% endcomment %}
-      {% assign ratio = photo.width | times: 1.0 | divided_by: photo.height %}
-      {% assign basis = ratio | times: 200 | round %}
-      <figure class="photo-item" style="flex: {{ ratio | round: 4 }} 1 {{ basis }}px">
-        {% include figure.liquid path=photo_path alt=photo.title class="photo-img" zoomable=true sizes="(min-width: 576px) 280px, 45vw" %}
-        <figcaption>{{ photo.title }}</figcaption>
-      </figure>
-    {% endfor %}
-  </div>
+  {% assign photo_rows = page.photos | group_by: 'row' %}
+  {% for photo_row in photo_rows %}
+    <div class="photo-grid">
+      {% for photo in photo_row.items %}
+        {% assign photo_path = photo.file | prepend: 'assets/img/photos/' %}
+        {% comment %} Width share follows the aspect ratio, so photos in a row share one height {% endcomment %}
+        {% assign ratio = photo.width | times: 1.0 | divided_by: photo.height %}
+        {% assign basis = ratio | times: 260 | round %}
+        <figure class="photo-item" style="flex: {{ ratio | round: 4 }} 1 {{ basis }}px">
+          {% include figure.liquid path=photo_path alt=photo.title class="photo-img" zoomable=true sizes="(min-width: 576px) 430px, 95vw" %}
+          <figcaption>{{ photo.title }}</figcaption>
+        </figure>
+      {% endfor %}
+    </div>
+  {% endfor %}
 </section>
 
 <!-- WeChat QR popup (opened by the "reach out on WeChat" link above) -->
