@@ -1,0 +1,49 @@
+<script>
+  // Highlight the nav link of the section currently in view.
+  (function () {
+    var links = Array.prototype.slice.call(document.querySelectorAll('.home-nav-links a[data-section]'));
+    if (!links.length) return;
+    var pinned = null; // link the user just clicked; kept until they scroll by hand
+    function activate(link) {
+      links.forEach(function (a) {
+        a.classList.toggle('active', a === link);
+      });
+    }
+    function update() {
+      if (pinned) return activate(pinned);
+      var current = links[0];
+      var doc = document.documentElement;
+      if (window.scrollY <= 0) return activate(current);
+      var scrollable = doc.scrollHeight - window.innerHeight > 2;
+      // At the very bottom the last block can't reach the top, so pick it.
+      if (scrollable && window.scrollY > 0 && window.innerHeight + window.scrollY >= doc.scrollHeight - 2) {
+        current = links[links.length - 1];
+      } else {
+        var mark = window.innerHeight * 0.35;
+        links.forEach(function (a) {
+          var el = document.getElementById(a.getAttribute('data-section'));
+          if (el && el.getBoundingClientRect().top <= mark) current = a;
+        });
+      }
+      activate(current);
+    }
+    links.forEach(function (a) {
+      a.addEventListener('click', function () {
+        pinned = a;
+        activate(a);
+      });
+    });
+    ['wheel', 'touchstart', 'keydown'].forEach(function (type) {
+      window.addEventListener(
+        type,
+        function () {
+          pinned = null;
+        },
+        { passive: true }
+      );
+    });
+    window.addEventListener('scroll', update, { passive: true });
+    window.addEventListener('resize', update);
+    update();
+  })();
+</script>

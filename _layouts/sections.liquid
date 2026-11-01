@@ -1,0 +1,45 @@
+---
+layout: default
+---
+{% comment %}
+  A page with its own sticky section nav, like the home page.
+  Front matter: `sections` is a list of {id, title}; each needs a matching
+  <section id="..."> in the page content. The brand on the left is an
+  arrow back to the home page.
+{% endcomment %}
+<nav class="home-nav" aria-label="Sections">
+  <div class="home-nav-inner">
+    <a class="home-nav-brand home-nav-back" href="{{ '/' | relative_url }}" title="Back to home">
+      <span aria-hidden="true">←</span>
+      {% if site.title == 'blank' -%}
+        {{ site.first_name }}
+        {{ site.last_name }}
+      {%- else -%}
+        {{ site.title }}
+      {%- endif %}
+    </a>
+    <div class="home-nav-links">
+      {% for section in page.sections %}
+        <a
+          href="#{{ section.id }}"
+          data-section="{{ section.id }}"
+          {% if forloop.first %}
+            class="active"
+          {% endif %}
+        >
+          {{- section.title -}}
+        </a>
+      {% endfor %}
+    </div>
+  </div>
+</nav>
+
+<div class="post home sections-page">
+  <header class="home-header">
+    <h1 class="page-heading">{{ page.title }}</h1>
+  </header>
+
+  {{ content }}
+</div>
+
+{% include section_nav_script.liquid %}

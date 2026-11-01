@@ -137,32 +137,4 @@ layout: default
   {% endif %}
 </div>
 
-<script>
-  // Highlight the nav link of the section currently in view.
-  (function () {
-    var links = Array.prototype.slice.call(document.querySelectorAll('.home-nav-links a[data-section]'));
-    if (!links.length) return;
-    function activate(link) {
-      links.forEach(function (a) {
-        a.classList.toggle('active', a === link);
-      });
-    }
-    function update() {
-      var current = links[0];
-      // At the very bottom the last block can't reach the top, so pick it.
-      if (window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 2) {
-        current = links[links.length - 1];
-      } else {
-        var mark = window.innerHeight * 0.35;
-        links.forEach(function (a) {
-          var el = document.getElementById(a.getAttribute('data-section'));
-          if (el && el.getBoundingClientRect().top <= mark) current = a;
-        });
-      }
-      activate(current);
-    }
-    window.addEventListener('scroll', update, { passive: true });
-    window.addEventListener('resize', update);
-    update();
-  })();
-</script>
+{% include section_nav_script.liquid %}
