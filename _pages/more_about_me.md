@@ -31,10 +31,6 @@ sections:
   </p>
   <ol class="proposal-list">
     <li>Brain-Body Co-evolving System towards AGI</li>
-    <li>
-      Phy-RFMs: Scalable Physics-Grounded Foundation Models for Robust Robotic Manipulation
-      (<a href="{{ '/assets/pdf/research_proposal (Phy-RFMs).pdf' | relative_url }}" target="_blank" rel="noopener">pdf</a>)
-    </li>
   </ol>
 </section>
 
@@ -53,16 +49,6 @@ sections:
       <a class="tool-name" href="https://github.com/xuxuezhou/scorespace">ScoreSpace</a>
       — turns photos or PDFs of guitar and piano sheet music into digital scores, with follow-along highlighting, auto page-turning and a virtual keyboard/fretboard. Web and iOS.
       <span class="tool-links"><a href="https://xuxuezhou.github.io/scorespace/">try it</a> | <a href="https://github.com/xuxuezhou/scorespace">github</a></span>
-    </li>
-    <li>
-      <a class="tool-name" href="https://github.com/xuxuezhou/physics-in-motion">Physics in Motion</a>
-      — a high-school physics practice platform: question bank by topic, step-by-step solutions, mistake review, mock exams and physics animations.
-      <span class="tool-links"><a href="https://github.com/xuxuezhou/physics-in-motion">github</a></span>
-    </li>
-    <li>
-      <a class="tool-name" href="https://github.com/xuxuezhou/pikachu-desktop-pet">Pikachu Desktop Pet</a>
-      — a native macOS desktop pet written in Swift. It wanders, naps, reacts to petting and keeps you company during pomodoro sessions, fully offline.
-      <span class="tool-links"><a href="https://github.com/xuxuezhou/pikachu-desktop-pet">github</a></span>
     </li>
   </ul>
 </section>
