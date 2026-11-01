@@ -38,11 +38,13 @@ $black-color: #000000 !default;
 $page-bg-light: #ffffff;
 $surface-light: #ffffff;
 $surface-muted-light: #f6f6f6;
-$ink-light: #000000;
+$ink-light: #1f1f1f;
 $ink-muted-light: #555555;
-$accent-light: #1772d0;
-$accent-light-hover: #f09228;
-$highlight-light: #d32f2f;
+$accent-light: #c0621c;
+$accent-light-hover: #8f430f;
+$highlight-light: #c0392b;
+$warm-tint-light: #fffaf2; // faint warm background for publication rows
+$amber-light: #f2b35e; // section-heading underline
 
 // Dark palette
 $page-bg-dark: #111318;

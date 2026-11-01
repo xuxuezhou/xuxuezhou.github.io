@@ -19,8 +19,7 @@ sections:
   <p>
     <strong>Badminton.</strong> I love playing badminton. I won the team gold medal at the Shaoxing Badminton
     Championships and reached the top four in both singles and doubles. My favorite players are Shi Yuqi and Kento
-    Momota. If you'd like to play a game together, feel free to
-    <a href="mailto:{{ site.data.socials.email | encode_email }}">reach out</a>!
+    Momota. If you'd like to play a game together, feel free to <a id="WeChatBtn" href="javascript:void(0)" title="WeChat">reach out on WeChat</a>!
   </p>
   <p>
     <strong>Photography.</strong> I like observing the world through photography, especially street photography and
@@ -75,3 +74,9 @@ sections:
   <h2 class="section-heading">Photos</h2>
   <p class="blogs-empty">Coming soon.</p>
 </section>
+
+<!-- WeChat QR popup (opened by the "reach out on WeChat" link above) -->
+<div id="WeChatMod" class="wechat-modal">
+  <img src="{{ site.data.socials.wechat_qr | prepend: 'assets/img/' | relative_url }}" alt="WeChat QR" id="WeChatQR">
+</div>
+<script defer src="{{ '/assets/js/wechat.js' | relative_url | bust_file_cache }}" type="text/javascript"></script>

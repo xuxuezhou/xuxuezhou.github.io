@@ -395,6 +395,16 @@ article {
   font-size: 22px !important;
   font-weight: 600;
   margin: 0 0 0.75rem 10px !important;
+  // Soft amber underline (toned-down take on a classic academic page)
+  text-decoration: underline;
+  text-decoration-color: var(--global-amber);
+  text-decoration-thickness: 2px;
+  text-underline-offset: 6px;
+
+  a,
+  a:visited {
+    text-decoration: inherit;
+  }
 
   a,
   a:visited {
@@ -479,6 +489,10 @@ article {
   h2.bibliography {
     font-size: 22px;
     font-weight: 600;
+    text-decoration: underline;
+    text-decoration-color: var(--global-amber);
+    text-decoration-thickness: 2px;
+    text-underline-offset: 6px;
     color: var(--global-text-color);
     text-align: left;
     border-top: 0;
@@ -491,8 +505,10 @@ article {
       margin-bottom: 0;
 
       > .row {
-        margin: 0;
+        margin: 0 0 12px;
         padding: 15px 0;
+        background: var(--global-warm-tint);
+        border-radius: 12px;
       }
 
       .abbr {
