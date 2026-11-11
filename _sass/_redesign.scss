@@ -904,6 +904,22 @@ footer.sticky-bottom {
   margin: 0.5rem 10px 24px;
 }
 
+// A row with a single photo: keep it centred at about the height of a full
+// row instead of stretching it across the page
+.photo-grid-single {
+  justify-content: center;
+
+  .photo-item {
+    flex: 0 1 auto !important;
+  }
+
+  img.photo-img {
+    width: auto;
+    max-width: 100%;
+    max-height: 500px;
+  }
+}
+
 // Phones: one photo per line at full width
 @media (max-width: 575.98px) {
   .photo-grid .photo-item {

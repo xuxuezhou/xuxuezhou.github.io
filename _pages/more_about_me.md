@@ -29,11 +29,6 @@ photos:
     height: 1616
     title: Flower Field
     row: 1
-  - file: graduate_trip_iceland.jpg
-    width: 1080
-    height: 1620
-    title: Graduate Trip @ Iceland
-    row: 2
   - file: my_favorite_goose.jpg
     width: 1333
     height: 2000
@@ -101,7 +96,7 @@ photos:
   <h2 class="section-heading">Photos</h2>
   {% assign photo_rows = page.photos | group_by: 'row' %}
   {% for photo_row in photo_rows %}
-    <div class="photo-grid">
+    <div class="photo-grid{% if photo_row.items.size == 1 %} photo-grid-single{% endif %}">
       {% for photo in photo_row.items %}
         {% assign photo_path = photo.file | prepend: 'assets/img/photos/' %}
         {% comment %} Width share follows the aspect ratio, so photos in a row share one height {% endcomment %}
