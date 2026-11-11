@@ -954,3 +954,9 @@ footer.sticky-bottom {
     color: var(--global-text-color);
   }
 }
+
+// Extra line under a paper's venue, e.g. an earlier workshop version
+.publications ol.bibliography li .paper-note {
+  color: var(--global-teal);
+  font-weight: 600;
+}
