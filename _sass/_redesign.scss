@@ -628,7 +628,7 @@ article {
           font-family: $font-sans;
           font-size: 16px;
           font-weight: 400;
-          text-transform: lowercase;
+          text-transform: none;
           letter-spacing: 0;
           color: var(--global-theme-color);
           background: none;
@@ -643,7 +643,7 @@ article {
           }
 
           &:not(:last-child)::after {
-            content: " |";
+            content: " / ";
             color: var(--global-text-color);
           }
         }
@@ -959,4 +959,30 @@ footer.sticky-bottom {
 .publications ol.bibliography li .paper-note {
   color: var(--global-teal);
   font-weight: 600;
+}
+
+// Paper entry text, top to bottom: title, authors, (*equal contribution),
+// Paper / Project / Code / Bibtex, venue in bold italic, short summary
+.publications ol.bibliography li {
+  .paper-annotation {
+    font-size: 15px;
+  }
+
+  .links {
+    margin-top: 0.15rem;
+  }
+
+  .periodical:not(.paper-note) {
+    font-weight: 700;
+    font-style: italic;
+
+    em {
+      font-style: italic;
+    }
+  }
+
+  .paper-tldr {
+    margin: 0.6rem 0 0;
+    line-height: 1.5;
+  }
 }
